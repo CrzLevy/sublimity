@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+:root {
+    --main-color: #3D2B7A;
+    --secondary-color: #725AC1;
+    --main-dark-color: #0F0A1E;
+    --secondary-dark-color: #242038;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-dark-color);
+    height: 100vh;
+}
+
+ul {
+    margin: 32px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-family: Dosis;
+}
+
+b {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 1000px) {
+    main ul {
+        display: none;
+    }
+}
+
+.invisible {
+    display: none;
+}
+
+.invisible-fade {
+    opacity: 0;
+    perspective: 500;
+    transform: rotateY(90deg);
+}
+
+.init {
+    transition: 0ms;
+}

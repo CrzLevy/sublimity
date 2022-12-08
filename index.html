@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ Sublimity }</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <canvas id="particle-container"></canvas>
+    <main>
+        <img class="screen-button" onclick="switchScreen(-1)" id="up-arrow"   src="img/chevron-up.svg">
+        <img class="screen-button" onclick="switchScreen(1)"  id="down-arrow" src="img/chevron-down.svg">
+        <ul>
+            <li>
+                <h3 onclick="switchScreen(0, 0)" id="header-home">Home</h3>
+            </li>
+            <li>
+                <h3 onclick="switchScreen(0, 1)" id="header-web-development">Web Development</h3>
+            </li>
+            <li>
+                <h3 onclick="switchScreen(0, 2)" id="header-software-development">Software Development</h3>
+            </li>
+            <li>
+                <h3 onclick="switchScreen(0, 3)" id="header-media-strategy">Media Strategy</h3>
+            </li>
+            <li>
+                <h3 onclick="switchScreen(0, 4)" id="header-about">About Us</h3>
+            </li>
+            <li>
+                <h3 onclick="switchScreen(0, 5)" id="header-contact">Contact</h3>
+            </li>
+        </ul>
+        <section id="home-screen" class="invisible">
+            <img class="home-image" src="img/logo.png">
+            <header>
+                <h1 class="page-title">{ <b>Sublimity</b> }</h1>
+                <h1 class="page-subtitle">noun - /səˈblɪm.ə.t̬i/</h1>
+                <h1 class="page-subtitle-2">"the quality of being extremely good, beautiful, or enjoyable"</h1>
+            </header>
+        </section>
+        <section id="web-dev-screen" class="invisible">
+            <div class="products-container">
+                <div class="product">
+                    <div class="product-wrapper">
+                        <img src="img/layout.png">
+                        <h1 class="page-title">Web Development</h1>
+                    </div>
+                    <p class="product-paragraph">Our Web Development service is aimed at helping you to grow your business, building up and maintaining your custom Web Application, always with responsible design, that works on all devices, and is easy for your users to navigate, that are both beautiful and intuitive. We have a strong background in UI & UX Design, E-commerce Development, API Integration and Maintenance support.</p>
+                    <p class="product-paragraph">We specialize in DevOps & Cloud technologies and can add value to your business by reducing costs and increasing efficiency through the use of innovative solutions that drive business forward in today’s fast paced environment.</p>
+                    <p class="product-paragraph">We combine Big Data Analysis and Front-end Web Development to create innovative solutions and integrating APIs and all the necessary functionalities that meet your business needs. We also provide support after the initial launch of your web application or website.</p>
+                </div>
+            </div>
+        </section>
+        <section id="software-dev-screen" class="invisible">
+            <div class="products-container">
+                <div class="product">
+                    <div class="product-wrapper">
+                        <img src="img/code.png">
+                        <h1 class="page-title">Software Development</h1>
+                    </div>
+                    <p class="product-paragraph">Our team of software developers is ready to provide you the best of the market, with an efficient and clean code. We develop web and mobile applications, back-end systems, custom software, scripts and bots.</p>
+                    <p class="product-paragraph">We can also handle any kind of project for our clients. If you need something created for your business or organization, or you need help with an existing product or system, we can be of service to you. We can assist in creating a new product from zero or optimize an existing one. Working with you to develop a plan that is within your timeframe and launch in market with a skilled team of developers and designers.</p>
+                </div>
+            </div>
+        </section>
+        <section id="media-strategy-screen" class="invisible">
+            <div class="products-container">
+                <div class="product">
+                    <div class="product-wrapper">
+                        <img src="img/social-media.png">
+                        <h1 class="page-title">Media Strategy</h1>
+                    </div>
+                    <p class="product-paragraph">We understand what it takes to grow your business in today's increasingly digital world. Our team can help you reach more customers and increase sales by creating sophisticated digital marketing strategy, including:  campaigns advertising and partnerships, paid and organic search engine optimization, web design and social media reputation management.</p>
+                    <p class="product-paragraph">Start a conversation with your customers. Our media strategy is designed to create a community who engage and interact with you. We help businesses understand there audience, who they are and what they like in order to provide the most engaging content to their target market.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-screen" class="invisible">
+            <header>
+                <h1 class="page-title">About Us</h1>
+            </header>
+            <div class="about-container">
+                <p class="about-text">Sublimity Technology came to unlock your digital potential and grow up your business.</p>
+                <p class="about-text">Answering to the demand for companies to have an online presence, Sublimily is engaged in Digital European Market determined to provide a wide range of services designed to make your business to reach next level.</p>
+                <p class="about-text">With the most talented professionals, we plan, organize, develop and integrate what your business does from physical to digital environment, and also increase your presence, efficiency and relevance, with sophisticated digital marketing and social media services.</p>
+                <p class="about-text">Even if your business is running totally on physical, our development team can build up from zero every digital integration, from Web Services to Custom Software, we provide beautiful, intuitive and optimized solutions, continuous maintenance, analysis report and support.</p>
+                <p class="about-text">Digital is changing the rules of business, and those who do not follow the new trends will be left behind. Do not miss the opportunity, call us.</p>
+            </div>
+        </section>
+        <section id="contact-screen" class="invisible">
+            <iframe src="https://calendly.com/sublime0levy/discovery-call"></iframe>
+        </section>
+    </main>
+    <script src="scripts/engine.js"></script>
+</body>
+</html>
